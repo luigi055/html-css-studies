@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamburguer Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="hamburger.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="page__title">Clickable Hamburguer Menu</h1>
+      <a
+        href="#nav-menu"
+        id="nav-menu-toggle"
+        class="menu__open-button"
+        aria-label="Open Navigation Menu"
+      >
+        <span class="sr-only">Open main menu</span>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+
+      <menu id="nav-menu" class="menu" aria-label="Navigation menu">
+        <div class="menu__close-wrapper">
+          <a
+            href="#nav-menu-toggle"
+            id="nav-menu-close"
+            class="menu__close-button"
+            aria-label="Close navigation menu"
+          >
+            <span class="sr-only">Close main menu</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <nav>...Navigation Elements...</nav>
+      </menu>
+      <a href="#nav-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
+    </header>
+  </body>
+</html>
